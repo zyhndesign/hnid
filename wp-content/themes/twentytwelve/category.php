@@ -39,7 +39,11 @@ $notification_id=1501;//通知公告分类id
             <?php while (have_posts()) : the_post();?>
 
                 <li>
-                    <?php if(in_category(array($download_id,$recruitment_id,$notification_id))){?>
+                    <?php
+                        $categories=get_the_category();
+
+                        if(count($categories)==1&&in_category(array($download_id,$recruitment_id,$notification_id))){
+                    ?>
 
                         <!--下载专区文章没有缩略图-->
                         <div class="nothumb-abstract">
