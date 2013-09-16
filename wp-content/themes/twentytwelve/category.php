@@ -36,69 +36,72 @@ $notification_id=1501;//通知公告分类id
 
         <ul class="post-list">
 
-            <?php while (have_posts()) : the_post();?>
+            <?php if(is_category($download_id)||is_category($recruitment_id)||is_category($notification_id)){?>
 
-                <li>
-                    <?php
-                        $categories=get_the_category();
+                <?php while (have_posts()) : the_post();?>
 
-                        if(count($categories)==1&&in_category(array($download_id,$recruitment_id,$notification_id))){
-                    ?>
-
+                    <li>
                         <!--下载专区文章没有缩略图-->
                         <div class="nothumb-abstract">
                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
                         </div>
+                        <a href="<?php the_permalink(); ?>" class="hnid_btn_more">详情</a>
+                    </li>
 
-                    <?php }else{
-                        //获取缩略图
-                        $post_id = get_the_ID();
-                        if(has_post_thumbnail($post_id)){
-                            $thumbnail_id=get_post_thumbnail_id($post_id);
-                            if(wp_get_attachment_metadata($thumbnail_id)){
+                <?php endwhile; ?>
 
-                                //如果存在保存媒体文件信息的metadata，那么系统是可以获取出缩略图的
-                                $showDir= wp_get_attachment_image_src($thumbnail_id,"post-thumbnail");
-                                $showDir=$showDir[0];
-                            }else{
+            <?php }else{ ?>
 
-                                $guid=get_post($thumbnail_id)->guid;
-                                $pathinfo=pathinfo($guid);
-                                $filename=substr($guid,strrpos($guid,"/")+1,strrpos($guid,'.')-strrpos($guid,"/")-1);
-                                $ext=$pathinfo["extension"];
-                                $dirname=$pathinfo["dirname"];
+                <?php while (have_posts()) : the_post();?>
+                <?php
+                    //获取缩略图
+                    $post_id = get_the_ID();
+                    if(has_post_thumbnail($post_id)){
+                        $thumbnail_id=get_post_thumbnail_id($post_id);
+                        if(wp_get_attachment_metadata($thumbnail_id)){
 
-                                //不能获取出缩略图，但是又绑定了，那么是原来迁过来的数据，直接找缩略图文件
-                                $showDir=$dirname."/".$filename."-500x500.".$ext;
-                            }
+                            //如果存在保存媒体文件信息的metadata，那么系统是可以获取出缩略图的
+                            $showDir= wp_get_attachment_image_src($thumbnail_id,"post-thumbnail");
+                            $showDir=$showDir[0];
                         }else{
-                            $showDir=get_template_directory_uri()."/images/app/thumb_default_500.png";
+
+                            $guid=get_post($thumbnail_id)->guid;
+                            $pathinfo=pathinfo($guid);
+                            $filename=substr($guid,strrpos($guid,"/")+1,strrpos($guid,'.')-strrpos($guid,"/")-1);
+                            $ext=$pathinfo["extension"];
+                            $dirname=$pathinfo["dirname"];
+
+                            //不能获取出缩略图，但是又绑定了，那么是原来迁过来的数据，直接找缩略图文件
+                            $showDir=$dirname."/".$filename."-500x500.".$ext;
                         }
-                    ?>
+                    }else{
+                        $showDir=get_template_directory_uri()."/images/app/thumb_default_500.png";
+                    }
+                ?>
 
-                        <!--非下载分类有缩略图-->
-                        <div class="post_thumb">
-                            <img src="<?php echo $showDir ?>">
-                        </div>
-                        <div class="post_abstract">
-                            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                <li>
+                    <!--非下载分类有缩略图-->
+                    <div class="post_thumb">
+                        <img src="<?php echo $showDir ?>">
+                    </div>
+                    <div class="post_abstract">
+                        <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 
-                            <p class="entry-date"><?php echo get_the_date(); ?></p>
+                        <p class="entry-date"><?php echo get_the_date(); ?></p>
 
-                            <p><?php echo get_the_excerpt(); ?></p>
+                        <p><?php echo get_the_excerpt(); ?></p>
 
-                            <?php echo get_the_tag_list('<ul class="entry-tags"><li>', '</li><li>', '</li></ul>');?>
-                        </div>
-
-                    <?php  } ?>
-
-                    <a href="<?php the_permalink(); ?>" class="hnid_btn_more">详情</a>
+                        <?php echo get_the_tag_list('<ul class="entry-tags"><li>', '</li><li>', '</li></ul>');?>
+                    </div>
                 </li>
 
-            <?php endwhile; ?>
+                <?php endwhile; ?>
+            <?php  } ?>
 
         </ul>
 
+
+        <!-- 分页-->
         <div class="hnid_pagination">
             <?php
             global $wp_query;
