@@ -401,10 +401,12 @@ li{
 	top:0;
 	left:0;
 	color:#666;
+    font-size: 14px;
 	}
 .hnid_bulletin ul li a{
 	text-decoration:none;
 	color:#666;
+    font-size: 14px;
 	}
 .hnid_bulletin ul li a:hover{
 	color:#48C6D5;
