@@ -30,8 +30,10 @@ $side_menu_id=1504;
                     }else if($key==1){
                         $class_name="hnid_nav_innovation";
                     }else if($key==2){
-                        $class_name="hnid_nav_resource";
+                        $class_name="hnid_nav_product";
                     }else if($key==3){
+                        $class_name="hnid_nav_resource";
+                    }else if($key==4){
                         $class_name="hnid_nav_lotusprize";
                     }else{
                         $class_name="hnid_nav_cidic";
@@ -57,7 +59,7 @@ $side_menu_id=1504;
             ?>
             <li>
                 <?php /*?><?php get_search_form(); ?><?php */?>
-                <form role="search" method="get" id="searchform" action="http://lotusprize.com/wp_hnid/">
+                <form role="search" method="get" id="searchform" action="http://hnid.org/">
 					<input type="text" name="s" id="s" value="搜索..." onblur="if (this.value=='') this.value='搜索...';" onfocus="if (this.value=='搜索...') this.value='';">
 					<input type="submit" id="searchsubmit" value="搜索">	
 				</form>

@@ -8,6 +8,8 @@ $(document).ready(function(e) {
 	var maxNewsScreen=Math.ceil($("#hnid_news>ul>li").length/3);
 	var currentInnovationScreen=1;
 	var maxInnovationScreen=Math.ceil($("#hnid_innovation>ul>li").length/4);
+    var currentProductScreen=1;
+    var maxProductScreen=Math.ceil($("#hnid_product>ul>li").length/4);
 	
 	//绑定子菜单点击相关事件
 	$("#hnid_expand_menu_btn").on("click",function(evt){
@@ -26,6 +28,7 @@ $(document).ready(function(e) {
 	$("#hnid_headline>.hnid_btn_prev").addClass("hnid_hidden");
 	$("#hnid_news>.hnid_btn_prev").addClass("hnid_hidden");
 	$("#hnid_innovation>.hnid_btn_prev").addClass("hnid_hidden");
+    $("#hnid_product>.hnid_btn_prev").addClass("hnid_hidden");
 	
 	//绑定headline “上一页”、“下一页”事件
 	$("#hnid_headline>.hnid_btn_prev").on("click",function(evt){
@@ -110,6 +113,32 @@ $(document).ready(function(e) {
 		};
 	evt.preventDefault();
 	})
-	
-	
+
+    //绑定product “上一页”、“下一页”事件
+    $("#hnid_product>.hnid_btn_prev").on("click",function(evt){
+        if(currentProductScreen>1){
+            currentProductScreen-=1;
+            $("#hnid_product > ul").css("left",-100*(currentProductScreen-1)+"%")
+            if(currentProductScreen==1){
+                $("#hnid_product>.hnid_btn_prev").addClass("hnid_hidden");
+            }
+            if(currentProductScreen==maxProductScreen-1){
+                $("#hnid_product>.hnid_btn_next").removeClass("hnid_hidden");
+            }
+        };
+        evt.preventDefault();
+    })
+    $("#hnid_product>.hnid_btn_next").on("click",function(evt){
+        if(currentProductScreen<maxProductScreen){
+            currentProductScreen+=1;
+            $("#hnid_product > ul").css("left",-100*(currentProductScreen-1)+"%")
+            if(currentProductScreen==maxProductScreen){
+                $("#hnid_product>.hnid_btn_next").addClass("hnid_hidden");
+            }
+            if(currentProductScreen==2){
+                $("#hnid_product>.hnid_btn_prev").removeClass("hnid_hidden");
+            }
+        };
+        evt.preventDefault();
+    })
 });

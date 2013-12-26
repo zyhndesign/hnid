@@ -97,7 +97,7 @@ li{
 }
 .hnid_header>.hnid_top_nav ul li{
 	display:inline-block;
-	width:20%;
+	width:16.6%;
 	}
 .hnid_header>.hnid_top_nav ul li a{
     width:100%;
@@ -133,6 +133,9 @@ li{
 }
 .hnid_nav_lotusprize{
     background: url("../../images/xavier/icon30_lotusprize.png") no-repeat center 20px;
+}
+.hnid_nav_product{
+    background: url("../../images/xavier/icon30_product.png") no-repeat center 20px;
 }
 .hnid_nav_cidic{
     background: url("../../images/xavier/icon30_cidic.png") no-repeat center 20px;
@@ -637,7 +640,110 @@ li{
 .hnid_innovation:hover .hnid_btn_next{
 	opacity:1;
 	}
-
+/*******************创新产品*****************/
+.hnid_product{
+    background:#D1DEE3;
+    padding:120px 0;
+    overflow:hidden;
+    position:relative;
+}
+.hnid_product h2{
+    color:#48C6D5;
+    font-size:48px;
+    text-align:center;
+    position:relative;
+}
+.hnid_product h2:before{
+    content:"";
+    width:242px;
+    height:70px;
+    position:absolute;
+    left:50%;
+    top:-90px;
+    margin-left:-121px;
+    background:url(../../images/xavier/section_title_product.png) no-repeat;
+}
+.hnid_product ul{
+    white-space:nowrap;
+    font-size:0;
+    position:relative;
+    left:0;
+    -webkit-transition:all 0.4s ease-out;
+    -ms-transition:all 0.4s ease-out;
+    -moz-transition:all 0.4s ease-out;
+    transition:all 0.4s ease-out;
+}
+.hnid_product ul li{
+    display:inline-block;
+    width:25%;
+    padding:0 20px;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+    border-left:#666 1px dotted;
+    vertical-align: top;
+}
+.hnid_product .post_thumb img{
+    width:100%;
+}
+.hnid_product .post_abstract{
+    margin:20px 0;
+    padding:0 30px;
+    white-space:normal;
+    position:relative;
+    height:200px;
+    color:#48C6D5;
+}
+.hnid_product .post_abstract>h3{
+    font-size:24px;
+    height:60px;
+    overflow:hidden;
+    margin:0;
+    text-align:center;
+}
+.hnid_product .post_abstract>h3 a{
+    color:#48C6D5;
+    text-decoration:none;
+}
+.hnid_product .post_abstract>p{
+    font-size:14px;
+    height:160px;
+    overflow:hidden;
+    color:#666;
+}
+.hnid_product .hnid_btn_more{
+    width:170px;
+    height:40px;
+    font-size:14px;
+    background:url(../../images/xavier/more_bg_yellow.png) no-repeat;
+    position:absolute;
+    right:0;
+    bottom:50px;
+    line-height:40px;
+    padding:0 30px;
+    text-decoration:none;
+    color:#fff;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    -ms-box-sizing:border-box;
+    box-sizing:border-box;
+}
+.hnid_product .hnid_btn_more:hover{
+    color:#333;
+}
+.hnid_product .hnid_btn_prev{
+    top:500px;
+}
+.hnid_product .hnid_btn_next{
+    top:500px;
+}
+.hnid_product:hover .hnid_btn_prev{
+    opacity:1;
+}
+.hnid_product:hover .hnid_btn_next{
+    opacity:1;
+}
 /****************** 设计资源 *****************/
 .hnid_resource{
 	padding:120px 0;

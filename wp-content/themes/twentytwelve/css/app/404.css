@@ -97,7 +97,7 @@ li{
 }
 .hnid_header>.hnid_top_nav ul li{
 	display:inline-block;
-	width:20%;
+	width:16.6%;
 	}
 .hnid_header>.hnid_top_nav ul li a{
     width:100%;
@@ -124,6 +124,9 @@ li{
 }
 .hnid_nav_innovation{
     background: url("../../images/xavier/icon30_innovation.png") no-repeat center 20px;
+}
+.hnid_nav_product{
+    background: url("../../images/xavier/icon30_product.png") no-repeat center 20px;
 }
 .hnid_nav_resource{
     background: url("../../images/xavier/icon30_designer.png") no-repeat center 20px;

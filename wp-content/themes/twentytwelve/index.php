@@ -25,6 +25,8 @@ $worknews_id=1495;//工作动态分类id
 
 $designinnovation_id=1497;//设计资讯分类id
 
+$designproduct_id=12;
+
 $designresource_id=1496;//设计资源分类id
 ?>
 <!DOCTYPE html>
@@ -304,6 +306,74 @@ $designresource_id=1496;//设计资源分类id
         <a href="<?php echo get_category_link($designinnovation_id)?>" class="hnid_btn_more">所有<?php echo get_category($designinnovation_id)->name ?></a>
 
     </section>
+
+    <!-- **************** 创新产品 ****************  -->
+    <section id="hnid_product" class="hnid_product">
+        <h2><?php echo get_category($designproduct_id)->name ?></h2>
+        <ul>
+
+            <?php
+            // The Query
+            $query = new WP_Query(array(
+                "cat"=>$designproduct_id,"posts_per_page"=>12,"orderby"=>'date',"order"=>'DESC'
+            ));
+
+            // The Loop
+            if ( $query->have_posts() ) {
+                while ( $query->have_posts() ) {
+                    $query->the_post();
+                    $post_id=get_the_ID();
+
+                    if(has_post_thumbnail($post_id)){
+                        $thumbnail_id=get_post_thumbnail_id($post_id);
+                        if(wp_get_attachment_metadata($thumbnail_id)){
+
+                            //如果存在保存媒体文件信息的metadata，那么系统是可以获取出缩略图的
+                            $showDir= wp_get_attachment_image_src($thumbnail_id,"post-thumbnail");
+                            $showDir=$showDir[0];
+                        }else{
+
+                            $guid=get_post($thumbnail_id)->guid;
+                            $pathinfo=pathinfo($guid);
+                            $filename=substr($guid,strrpos($guid,"/")+1,strrpos($guid,'.')-strrpos($guid,"/")-1);
+                            $ext=$pathinfo["extension"];
+                            $dirname=$pathinfo["dirname"];
+
+                            //不能获取出缩略图，但是又绑定了，那么是原来迁过来的数据，直接找缩略图文件
+                            $showDir=$dirname."/".$filename."-500x500.".$ext;
+                        }
+                    }else{
+                        $showDir=get_template_directory_uri()."/images/app/thumb_default_500.png";
+                    }
+
+                    ?>
+
+                    <li>
+                        <div class="post_thumb">
+                            <img src="<?php  echo $showDir; ?>" />
+                        </div>
+                        <div class="post_abstract">
+                            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                            <p><?php echo get_the_excerpt(); ?></p>
+                        </div>
+                    </li>
+
+                <?php
+                }
+            }
+
+            /* Restore original Post Data */
+            wp_reset_postdata();
+
+            ?>
+        </ul>
+
+        <a href="#" class="hnid_btn_prev">向前</a>
+        <a href="#" class="hnid_btn_next">向后</a>
+        <a href="<?php echo get_category_link($designproduct_id)?>" class="hnid_btn_more">所有<?php echo get_category($designproduct_id)->name ?></a>
+
+    </section>
+
 
     <!-- **************** 设计资源 ****************  -->
     <section id="hnid_resource" class="hnid_resource">
