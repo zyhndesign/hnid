@@ -850,7 +850,7 @@ function zy_action_uploadfile()
  * 处理文件上传的ajax函数
  * */
 add_action('wp_ajax_uploadfile', 'zy_action_uploadfile');
-//火狐里面这个地方不会带登陆标志过来，需要加下面这句
+//火狐里面这个地方不会带登陆标志过来，需要加下面这句或者前台上传插件使用html5引擎
 //add_action('wp_ajax_nopriv_uploadfile', 'zy_action_uploadfile');
 
 /*===================================================数据清理=====================================*/
