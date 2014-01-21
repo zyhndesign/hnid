@@ -19,7 +19,7 @@ li{
 .hnid_btn_prev{
 	width:80px;
 	height:80px;
-	background:url(../../images/xavier/btn80_prev.png) no-repeat;
+	background:url(../../../images/frontend/app/btn80_prev.png) no-repeat;
 	font-size:0;
 	text-indent:-9999px;
 	position:absolute;
@@ -31,7 +31,7 @@ li{
 .hnid_btn_next{
 	width:80px;
 	height:80px;
-	background:url(../../images/xavier/btn80_next.png) no-repeat;
+	background:url(../../../images/frontend/app/btn80_next.png) no-repeat;
 	font-size:0;
 	text-indent:-9999px;
 	position:absolute;
@@ -78,7 +78,7 @@ li{
     display: block;
     width:300px;
     height: 140px;
-    background: url("../../images/xavier/logo.png") no-repeat;
+    background: url("../../../images/frontend/app/logo.png") no-repeat;
     font-size: 0;
     text-indent:-9999px;
 
@@ -120,25 +120,25 @@ li{
 	color:#48C6D5;
 	}
 .hnid_nav_news{
-    background: url("../../images/xavier/icon30_news.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_news.png") no-repeat center 20px;
 }
 .hnid_nav_innovation{
-    background: url("../../images/xavier/icon30_innovation.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_innovation.png") no-repeat center 20px;
 }
 .hnid_nav_resource{
-    background: url("../../images/xavier/icon30_designer.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_designer.png") no-repeat center 20px;
 }
 .hnid_nav_organization{
-    background: url("../../images/xavier/icon30_organization.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_organization.png") no-repeat center 20px;
 }
 .hnid_nav_lotusprize{
-    background: url("../../images/xavier/icon30_lotusprize.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_lotusprize.png") no-repeat center 20px;
 }
 .hnid_nav_product{
-    background: url("../../images/xavier/icon30_product.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_product.png") no-repeat center 20px;
 }
 .hnid_nav_cidic{
-    background: url("../../images/xavier/icon30_cidic.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_cidic.png") no-repeat center 20px;
 }
 
 .hnid_expand_menu_btn{
@@ -151,7 +151,7 @@ li{
 	width:100px;
 	height:100px;
 	border-left:#ccc 1px dotted;
-	background: url("../../images/xavier/icon20_menu.png") #fff no-repeat center 26px;
+	background: url("../../../images/frontend/app/icon20_menu.png") #fff no-repeat center 26px;
 
 	position:absolute;
 	right:0;
@@ -222,7 +222,7 @@ li{
 	line-height:20px;
 	color:#666;
 	font-family:"微软雅黑", verdana;
-	background: url("../../images/xavier/icon30_search.png") no-repeat 90% center;	
+	background: url("../../../images/frontend/app/icon30_search.png") no-repeat 90% center;
 	}
 
 
@@ -274,7 +274,7 @@ li{
 	content:"";
 	width:34px;
 	height:140px;
-	background:url(../../images/xavier/brace_left_white_x.png) no-repeat;
+	background:url(../../../images/frontend/app/brace_left_white_x.png) no-repeat;
 	position:absolute;
 	top:0;
 	left:0;
@@ -283,7 +283,7 @@ li{
 	content:"";
 	width:34px;
 	height:140px;
-	background:url(../../images/xavier/brace_right_white_x.png) no-repeat;
+	background:url(../../../images/frontend/app/brace_right_white_x.png) no-repeat;
 	position:absolute;
 	top:0;
 	right:0;
@@ -323,7 +323,7 @@ li{
 	width:170px;
 	height:40px;
 	font-size:14px;
-	background:url(../../images/xavier/more_bg_blue.png) no-repeat;
+	background:url(../../../images/frontend/app/more_bg_blue.png) no-repeat;
 	position:absolute;
 	right:0;
 	bottom:50px;
@@ -370,7 +370,7 @@ li{
 	content:"";
 	width:15px;
 	height:60px;
-	background:url(../../images/xavier/brace_left_blue_s.png) no-repeat;
+	background:url(../../../images/frontend/app/brace_left_blue_s.png) no-repeat;
 	position:absolute;
 	top:0;
 	left:0;
@@ -379,7 +379,7 @@ li{
 	content:"";
 	width:15px;
 	height:60px;
-	background:url(../../images/xavier/brace_right_blue_s.png) no-repeat;
+	background:url(../../../images/frontend/app/brace_right_blue_s.png) no-repeat;
 	position:absolute;
 	top:0;
 	right:0;
@@ -453,7 +453,7 @@ li{
 	left:50%;
 	top:-90px;
 	margin-left:-121px;
-	background:url(../../images/xavier/section_title_news.png) no-repeat;
+	background:url(../../../images/frontend/app/section_title_news.png) no-repeat;
 	}
 .hnid_news ul{
 	white-space:nowrap;
@@ -509,7 +509,7 @@ li{
 	width:170px;
 	height:40px;
 	font-size:14px;
-	background:url(../../images/xavier/more_bg_yellow.png) no-repeat;
+	background:url(../../../images/frontend/app/more_bg_yellow.png) no-repeat;
 	position:absolute;
 	right:0;
 	bottom:50px;
@@ -557,7 +557,7 @@ li{
 	left:50%;
 	top:-90px;
 	margin-left:-121px;
-	background:url(../../images/xavier/section_title_innovation.png) no-repeat;
+	background:url(../../../images/frontend/app/section_title_innovation.png) no-repeat;
 	}
 .hnid_innovation ul{
 	white-space:nowrap;
@@ -612,7 +612,7 @@ li{
 	width:170px;
 	height:40px;
 	font-size:14px;
-	background:url(../../images/xavier/more_bg_yellow.png) no-repeat;
+	background:url(../../../images/frontend/app/more_bg_yellow.png) no-repeat;
 	position:absolute;
 	right:0;
 	bottom:50px;
@@ -661,7 +661,7 @@ li{
     left:50%;
     top:-90px;
     margin-left:-121px;
-    background:url(../../images/xavier/section_title_product.png) no-repeat;
+    background:url(../../../images/frontend/app/section_title_product.png) no-repeat;
 }
 .hnid_product ul{
     white-space:nowrap;
@@ -716,7 +716,7 @@ li{
     width:170px;
     height:40px;
     font-size:14px;
-    background:url(../../images/xavier/more_bg_yellow.png) no-repeat;
+    background:url(../../../images/frontend/app/more_bg_yellow.png) no-repeat;
     position:absolute;
     right:0;
     bottom:50px;
@@ -765,7 +765,7 @@ li{
 	left:50%;
 	top:-90px;
 	margin-left:-121px;
-	background:url(../../images/xavier/section_title_resource.png) no-repeat;
+	background:url(../../../images/frontend/app/section_title_resource.png) no-repeat;
 	}
 .hnid_resource ul{
 	font-size:0;
@@ -832,7 +832,7 @@ li{
 	width:170px;
 	height:40px;
 	font-size:14px;
-	background:url(../../images/xavier/more_bg_yellow.png) no-repeat;
+	background:url(../../../images/frontend/app/more_bg_yellow.png) no-repeat;
 	position:absolute;
 	right:0;
 	bottom:50px;

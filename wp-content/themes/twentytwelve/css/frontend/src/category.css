@@ -19,7 +19,7 @@ li{
 .hnid_btn_prev{
 	width:80px;
 	height:80px;
-	background:url(../../images/xavier/btn80_prev.png) no-repeat;
+	background:url(../../../images/frontend/app/btn80_prev.png) no-repeat;
 	font-size:0;
 	text-indent:-9999px;
 	position:absolute;
@@ -31,7 +31,7 @@ li{
 .hnid_btn_next{
 	width:80px;
 	height:80px;
-	background:url(../../images/xavier/btn80_next.png) no-repeat;
+	background:url(../../../images/frontend/app/btn80_next.png) no-repeat;
 	font-size:0;
 	text-indent:-9999px;
 	position:absolute;
@@ -78,7 +78,7 @@ li{
     display: block;
     width:300px;
     height: 140px;
-    background: url("../../images/xavier/logo.png") no-repeat;
+    background: url("../../../images/frontend/app/logo.png") no-repeat;
     font-size: 0;
     text-indent:-9999px;
 
@@ -120,25 +120,25 @@ li{
 	color:#48C6D5;
 	}
 .hnid_nav_news{
-    background: url("../../images/xavier/icon30_news.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_news.png") no-repeat center 20px;
 }
 .hnid_nav_innovation{
-    background: url("../../images/xavier/icon30_innovation.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_innovation.png") no-repeat center 20px;
 }
 .hnid_nav_product{
-    background: url("../../images/xavier/icon30_product.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_product.png") no-repeat center 20px;
 }
 .hnid_nav_resource{
-    background: url("../../images/xavier/icon30_designer.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_designer.png") no-repeat center 20px;
 }
 .hnid_nav_organization{
-    background: url("../../images/xavier/icon30_organization.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_organization.png") no-repeat center 20px;
 }
 .hnid_nav_lotusprize{
-    background: url("../../images/xavier/icon30_lotusprize.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_lotusprize.png") no-repeat center 20px;
 }
 .hnid_nav_cidic{
-    background: url("../../images/xavier/icon30_cidic.png") no-repeat center 20px;
+    background: url("../../../images/frontend/app/icon30_cidic.png") no-repeat center 20px;
 }
 
 .hnid_expand_menu_btn{
@@ -151,7 +151,7 @@ li{
 	width:100px;
 	height:100px;
 	border-left:#ccc 1px dotted;
-	background: url("../../images/xavier/icon20_menu.png") #fff no-repeat center 26px;
+	background: url("../../../images/frontend/app/icon20_menu.png") #fff no-repeat center 26px;
 
 	position:absolute;
 	right:0;
@@ -222,7 +222,7 @@ li{
 	line-height:20px;
 	color:#666;
 	font-family:"微软雅黑", verdana;
-	background: url("../../images/xavier/icon30_search.png") no-repeat 90% center;	
+	background: url("../../../images/frontend/app/icon30_search.png") no-repeat 90% center;
 	}
 
 
@@ -230,129 +230,145 @@ li{
 .site-content{
 	
 	}
-.entry-header{
-	padding:200px 0 0 0;
+.archive-header{
+	padding:200px 0 40px 0;
 	background:#48C6D5;
 	}
-.entry-title{
+.archive-title{
 	text-align:center;
 	font-size:3em;
 	color:#fff;
-	}
-.entry-date{
-	text-align:center;
-	font-size:0.7em;
-	color:#666;
-	padding:1em 0;
-	background:#eee;
-	}
-.entry-content{	
-	width:70%;
-	max-width:970px;
-	margin:auto;
-	}
-.entry-content p{
-	font-size:1em;
-	line-height:1.5em;
-	}
-.entry-content img{
-	display:block;
-	margin:20px auto;
-	max-width:100%;
-	}
-.entry-content a{
-	color:#48C6D5;
-	}
-.entry-content a:hover{
-	color:#333;
-	}
-.entry-content table{
-	width:100%;
-	}
-.entry-content table td{
-	padding:6px;
-	border-collapse:collapse;
-	border:#ccc 1px solid;
-	}	
-	
-
-.entry-tags{
-	text-align:center;
-	}
-.entry-tags>li{
-	display:inline;
-	
-	}
-.entry-tags>li>a{
-	display:inline-block;
-	padding:0 20px 0 30px;
-	height:50px;
-	line-height:50px;
-	background: url("../../images/xavier/icon20_tag.png") no-repeat 10px center #D1A631;
-	margin:0 10px;
-	color:#fff;
-	text-decoration:none;
-	}
-.entry-tags>li>a:hover{
-	color:#333;
-	}
-.nav-single{
-	height:200px;
 	position:relative;
 	}
-.nav-single > .assistive-text{
-	display:none;
-	}
-.nav-single a{
-	text-decoration:none;
-	color:#fff;
-	}
-.nav-single a:hover{
-	color:#333;
-	}
-.nav-single > .nav-previous{
-	line-height:40px;
-	height:40px;
-	padding:0 10px;
-	position:absolute;
-	top:80px;
-	left:0;
-	background:#48c6d5;
-	font-size:14px;
-	}
-.nav-single > .nav-previous:after{
+.archive-title:before{
 	content:"";
-	width:12px;
-	height:40px;
-	background:url("../../images/xavier/blue_flag_tail_right.png") no-repeat;
-	position:absolute;
-	top:0;
-	right:-12px;
-	}
-.nav-single > .nav-next{
-	line-height:40px;
-	height:40px;
-	padding:0 10px;
-	position:absolute;
-	top:80px;
-	right:0;
-	background:#48c6d5;
-	font-size:14px;
-	}
-.nav-single > .nav-next:after{
-	content:"";
-	width:12px;
-	height:40px;
-	background:url("../../images/xavier/blue_flag_tail_left.png") no-repeat;
-	position:absolute;
-	top:0;
-	left:-12px;
-	}
-.nav-single > .nav-previous >a, .nav-single > .nav-next >a{
-	line-height:40px;
-	height:40px;
+	position:relative;
+	width:15px;
+	height:60px;
+	background:url("../../../images/frontend/app/brace_left_white_m.png");
+	left:-20px;
+	top:10px;
 	display:inline-block;
 	}
+.archive-title:after{
+	content:"";
+	position:relative;
+	width:15px;
+	height:60px;
+	background:url("../../../images/frontend/app/brace_right_white_m.png");
+	right:-20px;
+	top:10px;	
+	display:inline-block;
+	}
+.post-list{
+	width:80%;
+	min-width:720px;
+	margin:auto;
+	}
+.post-list li{
+	position:relative;
+	border-bottom:#ccc 1px dotted;
+	padding:10px;
+	overflow:hidden;
+	}
+.post_thumb{
+	width:300px;
+	}
+.post_thumb>img{
+	width:100%;
+	}
+.post_abstract{
+	position:absolute;
+	left:350px;
+	top:10px;
+	}
+.post_abstract h3{
+	margin:0;
+	}
+.post_abstract h3 a{
+	text-decoration:none;
+	color:#48C6D5;
+	font-size:1.5em;
+	}
+.post_abstract p{
+	font-size:1em;
+	line-height:1.5em;
+	}	
+.post-list li .hnid_btn_more{
+	width:170px;
+	height:40px;
+	font-size:14px;
+	background:url(../../../images/frontend/app/more_bg_blue.png) no-repeat;
+	position:absolute;
+	right:0;
+	bottom:10px;
+	line-height:40px;
+	padding:0 30px;
+	text-decoration:none;
+	color:#fff;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+	}
+.post-list li .hnid_btn_more:hover{
+	color:#333;
+	}
+.post-list .post_abstract>.entry-tags{
+	
+	}
+.post-list .post_abstract>.entry-tags>li{
+	display:inline;
+	border:none;
+	padding:0;
+	}
+.post-list .post_abstract>.entry-tags>li>a {
+	display: inline-block;
+	padding: 0 20px 0 30px;
+	height: 40px;
+	line-height: 40px;
+	background: url("../../../images/frontend/app/icon20_tag.png") no-repeat 10px center #D1A631;
+	margin-right:10px;
+	color: #fff;
+	text-decoration: none;
+	font-size:14px;
+}
+.post-list .post_abstract>.entry-tags>li>a:hover{
+	color:#333;
+	}
+.post-list .post_abstract>.entry-date{
+	margin:10px 0;
+	font-size:14px;
+	color: #666;
+	font-style: italic;
+	background:url("../../../images/frontend/app/icon_date_gray.png") no-repeat 0 center;
+	padding-left:25px;
+	}
+.hnid_pagination{
+	padding:50px 0;
+	}	
+ul.page-numbers{
+	text-align:center;
+	}
+ul.page-numbers li{
+	display:inline;
+	}
+ul.page-numbers li span, ul.page-numbers li a{
+	text-decoration:none;
+	padding:0 20px;
+	height:50px;
+	line-height:50px;
+	color:#fff;
+	background:#48c6d5;
+	display:inline-block;
+	}
+ul.page-numbers li a:hover{
+	background:#333;
+	}
+ul.page-numbers li .current{
+	background:#D1A631;
+	}
+
 /****************** 页脚 *****************/	
 .hnid_footer{
 	padding:120px 0;

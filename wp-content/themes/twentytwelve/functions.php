@@ -537,9 +537,9 @@ function zy_load_resource($hook)
         </script>";
 
         //引入文章页面的js
-        wp_enqueue_script("zy_post_js", get_template_directory_uri() . '/js/app/zy_post.js');
+        wp_enqueue_script("zy_post_js", get_template_directory_uri() . '/js/backend/src/zy_post.js');
         //引入自定义的css
-        wp_enqueue_style("zy_post_css", get_template_directory_uri() . '/css/app/zy_post.css');
+        wp_enqueue_style("zy_post_css", get_template_directory_uri() . '/css/backend/src/zy_post.css');
     }
 }
 
@@ -605,7 +605,8 @@ function zy_post_background_box($post)
 
         } else {
 
-            echo "<img id='zy_background_content'  class='zy_background' src='" . get_template_directory_uri() . "/images/app/zy_default_background.png'>";
+            echo "<img id='zy_background_content'  class='zy_background' src='" . get_template_directory_uri() .
+                "/images/backend/app/zy_default_background.png'>";
 
         }
 

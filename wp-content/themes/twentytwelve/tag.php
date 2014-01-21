@@ -22,10 +22,12 @@
     <meta name="keywords" content="工业设计协会，湖南省工业设计协会" />
     <title><?php wp_title("|",true,"right"); ?></title>
 
-	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/app/tag.css" />
+	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/frontend/src/tag.css"/>
 
-    <script src="<?php echo get_template_directory_uri(); ?>/js/app/googleAnalytics.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.10.2.min.js"></script><script src="<?php echo get_template_directory_uri(); ?>/js/app/HNID.UIManager.js"></script>    <script src="<?php echo get_template_directory_uri(); ?>/js/app/tag.js"></script>    <title><?php wp_title() ?></title>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/lib/jquery-1.10.2.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/googleAnalytics.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/HNID.UIManager.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/tag.js"></script>
 
 </head>
 
@@ -68,7 +70,7 @@
                         $showDir=$dirname."/".$filename."-500x500.".$ext;
                     }
                 }else{
-                    $showDir=get_template_directory_uri()."/images/app/thumb_default_500.png";
+                    $showDir=get_template_directory_uri()."/images/frontend/app/thumb_default_500.png";
                 }
 				?>
 

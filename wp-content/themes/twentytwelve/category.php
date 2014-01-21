@@ -19,12 +19,13 @@ $notification_id=1501;//通知公告分类id
     <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
     <meta name="description" content="湖南省工业设计协会" />
     <meta name="keywords" content="工业设计协会，湖南省工业设计协会" />
-    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/app/category.css"/>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/libs/jquery-1.10.2.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/app/HNID.UIManager.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/app/googleAnalytics.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/js/app/category.js"></script>
     <title><?php wp_title("|",true,"right"); ?></title>
+    <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/css/frontend/src/category.css"/>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/lib/jquery-1.10.2.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/HNID.UIManager.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/googleAnalytics.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/frontend/src/category.js"></script>
+
 </head>
 
 <!--头部-->
@@ -78,7 +79,7 @@ $notification_id=1501;//通知公告分类id
                             $showDir=$dirname."/".$filename."-500x500.".$ext;
                         }
                     }else{
-                        $showDir=get_template_directory_uri()."/images/app/thumb_default_500.png";
+                        $showDir=get_template_directory_uri()."/images/frontend/app/thumb_default_500.png";
                     }
                 ?>
 
