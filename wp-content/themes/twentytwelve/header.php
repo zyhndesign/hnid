@@ -59,9 +59,9 @@ $side_menu_id=1504;
             ?>
             <li>
                 <?php /*?><?php get_search_form(); ?><?php */?>
-                <form role="search" method="get" id="searchform" action="http://hnid.org/">
+                <form role="search" method="get" id="searchform" class="hnid_search_form" action="http://hnid.org/">
 					<input type="text" name="s" id="s" value="搜索..." onblur="if (this.value=='') this.value='搜索...';" onfocus="if (this.value=='搜索...') this.value='';">
-					<input type="submit" id="searchsubmit" value="搜索">	
+					<input type="submit" id="searchsubmit" value="搜索" class="hnid_search_submit">
 				</form>
     		</li>
         </ul>
