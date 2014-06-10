@@ -893,6 +893,17 @@ function zy_delete_post($post_id)
 
 add_action('deleted_post', 'zy_delete_post');
 
+/**
+ * 修改搜索的显示地址
+ */
+function change_search_url_rewrite() {
+    if ( is_search() && ! empty( $_GET['s'] ) ) {
+        wp_redirect( home_url( "/search/" ) . urlencode( get_query_var( 's' ) ) );
+        exit();
+    }
+}
+add_action( 'template_redirect', 'change_search_url_rewrite' );
+
 
 
 

@@ -37,7 +37,13 @@ $(document).ready(function(e) {
         return false;
     });
 
+    //点击空白处影藏搜索子菜单
     $(document).on("click",function(evt){
         HNID.UIManager.hideSubMenu()
     });
+
+    //点击搜索子菜单的时候阻止事件冒泡从而阻止影藏搜索子菜单
+    $("#hnid_sub_nav").on("click",function(evt){
+        evt.stopPropagation();
+    })
 });
