@@ -11,6 +11,12 @@ li{
     list-style:none;
 }
 /****************** 页头部分 header *****************/
+.hnid_header_bg{
+    width: 100%;
+    height: 130px;
+    background: url(../../../images/frontend/app/header_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+}
 .hnid_header{
     position:fixed;
     width: 100%;

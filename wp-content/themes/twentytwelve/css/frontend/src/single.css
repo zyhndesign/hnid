@@ -4,7 +4,7 @@
 	
 	}
 .entry-header{
-	padding:200px 0 0 0;
+	padding:50px 0 0 0;
 	background:#48C6D5;
 	}
 .entry-title{
@@ -27,12 +27,19 @@
 .entry-content p{
 	font-size:1em;
 	line-height:1.5em;
+    text-indent: 2em;
 	}
-.entry-content img{
-	display:block;
-	margin:20px auto;
-	max-width:100%;
-	}
+.entry-content img,.entry-content video{
+    max-width: 100% !important;
+    height:auto !important;
+    margin: 20px auto;
+    display: block;
+    border: none;
+}
+.entry-content object,.entry-content embed{
+    width:640px!important;
+    height: 480px!important;
+}
 .entry-content a{
 	color:#48C6D5;
 	}

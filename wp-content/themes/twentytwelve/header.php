@@ -13,6 +13,9 @@ $main_menu_id=1503;
 $side_menu_id=1504;
 ?>
 <body>
+<div class="hnid_header_bg">
+
+</div>
 <header class="hnid_header">
     <h1 id="hnid_logo" class="hnid_logo">
         <a href="<?php echo site_url(); ?>">湖南省工业设计创新平台-Hunan Innovation Platform for Industrial Design</a>
